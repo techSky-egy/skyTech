@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SurgeriesComponent } from './surgeries/surgeries.component';
 import { SurgeriesRoutingModule } from './surgeries-routing.module';
 import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     SurgeriesRoutingModule,
-    RouterModule
+    RouterModule,
+    CarouselModule
   ]
 })
 export class SurgeriesModule { }

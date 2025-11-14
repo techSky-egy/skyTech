@@ -3,15 +3,69 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HomeService } from './service/home.service';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { ToastrService } from 'ngx-toastr';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   contactForm: FormGroup;
   isFormSubmitted: boolean = false;
+
+  // Owl Carousel Options for Devices
+  devicesCarouselOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      992: {
+        items: 3
+      }
+    },
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true
+  };
+
+  // Owl Carousel Options for Fibers
+  fibersCarouselOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      992: {
+        items: 3
+      }
+    },
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true
+  };
+
   constructor(
     private formBuilder: FormBuilder,
     private toastr: ToastrService) { }

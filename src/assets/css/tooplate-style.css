@@ -438,7 +438,7 @@ header span i {
   color: #05a9ca;
   padding-bottom: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 
 }
 
@@ -1258,13 +1258,13 @@ label {
 
 @media (min-width:1201px) {
   #home .landing-content p {
-    width: 66%;
+    /* width: 66%; */
   }
 }
 
 @media (min-width:768px) and (max-width:991px) {
   #home .landing-content p {
-    width: 53%;
+    /* width: 53%; */
   }
 }
 
@@ -1451,4 +1451,9 @@ label {
 
 .m2-Surgical-landing.news {
   background-image: url(../images/news/newsLanding.gif);
+}
+
+
+.m2-Surgical-landing.s1-plus-landing{
+    background-image: url(../images/pro-plus/landing.jpg);
 }

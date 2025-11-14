@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-laser-fiber',
   templateUrl: './laser-fiber.component.html',
-  styleUrls: ['./laser-fiber.component.css']
+  styleUrls: ['./laser-fiber.component.scss']
 })
 export class LaserFiberComponent {
 
